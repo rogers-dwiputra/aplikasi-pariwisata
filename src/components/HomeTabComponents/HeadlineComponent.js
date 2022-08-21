@@ -12,13 +12,13 @@ import axios from 'axios';
 const HeadlineComponent = () => {
 
     const [data, setData] = React.useState({
-        thumbnail: 'https://inspiring.beltim.go.id/uploads/wisata/square/WhatsApp Image 2022-08-09 at 11.15.04.jpg',
+        thumbnail: '',
     });
 
     React.useEffect(() => {
-        axios.get('https://inspiring.beltim.go.id/api/poi/headline', 
+        axios.get('', 
         { 
-            headers: { 'x-api-key': 'chandra.0imfnc8mVLWwsAawjYr4Rx-Af50DDqtlx' }
+            headers: { 'x-api-key': '' }
         })
         .then(function (response) {
             // handle success
