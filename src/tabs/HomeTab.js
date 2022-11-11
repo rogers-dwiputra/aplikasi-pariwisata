@@ -11,6 +11,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import SearchBarComponent from '../components/HomeTabComponents/SearchBarComponent';
 import HeadlineComponent from '../components/HomeTabComponents/HeadlineComponent';
 import DestinasiWisataComponent from '../components/HomeTabComponents/DetinasiWisataComponent';
+
 const HomeTab = () => {
 
     return (

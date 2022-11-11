@@ -15,25 +15,6 @@ const HeadlineComponent = () => {
         thumbnail: '',
     });
 
-    React.useEffect(() => {
-        axios.get('', 
-        { 
-            headers: { 'x-api-key': '' }
-        })
-        .then(function (response) {
-            // handle success
-            console.log(response.data);
-            setData(response.data);
-        })
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-        })
-        .then(function () {
-            // always executed
-        });
-    }, []);
-
     return (
         <View
             style={{
@@ -46,7 +27,7 @@ const HeadlineComponent = () => {
                 }}
                 >
                 <Image
-                    source={{uri: data.thumbnail}}
+                    source={require('../../assets/img/headline.png')}
                     style={{
                         width: '100%',
                         height: 250,
